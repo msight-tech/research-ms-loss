@@ -1,0 +1,9 @@
+[flake8]
+ignore = F401, F841, E402, E722, E999
+max-line-length = 128
+max-complexity=18
+format=pylint
+show_source = True
+statistics = True
+count = True
+exclude = tests,ret_benchmark/modeling/backbone

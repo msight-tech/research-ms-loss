@@ -1,0 +1,29 @@
+# Copyright (c) Malong Technologies Co., Ltd.
+# All rights reserved.
+#
+# Contact: github@malong.com
+#
+# This source code is licensed under the LICENSE file in the root directory of this source tree.
+
+MODEL:
+  BACKBONE:
+    NAME: bninception
+
+SOLVER:
+  MAX_ITERS: 3000
+  STEPS: [1200, 2400]
+  OPTIMIZER_NAME: Adam
+  BASE_LR: 0.00003
+  WARMUP_ITERS: 0
+  WEIGHT_DECAY: 0.0005
+  
+DATA:
+  TRAIN_IMG_SOURCE: resource/datasets/CUB_200_2011/train.txt
+  TEST_IMG_SOURCE: resource/datasets/CUB_200_2011/test.txt
+  TRAIN_BATCHSIZE: 80
+  TEST_BATCHSIZE: 256
+  NUM_WORKERS: 8
+  NUM_INSTANCES: 5
+
+VALIDATION:
+  VERBOSE: 200
