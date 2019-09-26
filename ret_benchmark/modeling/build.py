@@ -31,5 +31,5 @@ def build_model(cfg):
         model.backbone.load_param(pretrained_path)
     elif os.path.exists(cfg.MODEL.PRETRAIN):
         ckp = torch.load(cfg.MODEL.PRETRAIN)
-        model.load_state_dict(ckp['model_state_dict'])
+        model.load_state_dict(ckp['model'])
     return model
