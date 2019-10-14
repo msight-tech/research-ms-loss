@@ -22,7 +22,7 @@ Code for the CVPR 2019 paper [Multi-Similarity Loss with General Pair Weighting 
 
 ### Prepare the data and the pretrained model 
 
-Download the dataset from [CUB](http://www.vision.caltech.edu/visipedia-data/CUB-200/images.tgz), put it in the ./resource/datasets/ folder, and build data list (train.txt test.txt) as below:
+Download the dataset from [CUB](http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-data/CUB-200-2011/CUB_200_2011.tgz), put it in the ./resource/datasets/ folder, and build data list (train.txt test.txt) as below:
 
 ```bash
 train/020.Yellow_breasted_Chat/Yellow_Breasted_Chat_0075_21715.jpg,0
