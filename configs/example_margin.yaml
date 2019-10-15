@@ -24,8 +24,8 @@ SOLVER:
   WEIGHT_DECAY: 0.0005
   
 DATA:
-  TRAIN_IMG_SOURCE: resource/datasets/CUB_200_2011/cub_train.txt
-  TEST_IMG_SOURCE: resource/datasets/CUB_200_2011/cub_test.txt
+  TRAIN_IMG_SOURCE: resource/datasets/CUB_200_2011/train.txt
+  TEST_IMG_SOURCE:  resource/datasets/CUB_200_2011/test.txt
   TRAIN_BATCHSIZE: 120
   TEST_BATCHSIZE: 256
   NUM_WORKERS: 8
@@ -34,4 +34,5 @@ DATA:
 VALIDATION:
   VERBOSE: 200
 
-SAVE_DIR: output_cub
+SAVE_DIR: output_margin
+

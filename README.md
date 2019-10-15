@@ -22,14 +22,11 @@ Code for the CVPR 2019 paper [Multi-Similarity Loss with General Pair Weighting 
 
 ### Prepare the data and the pretrained model 
 
-Download the dataset from [CUB](http://www.vision.caltech.edu/visipedia-data/CUB-200/images.tgz), put it in the ./resource/datasets/ folder, and build data list (train.txt test.txt) as below:
+Following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-data/CUB-200-2011/CUB_200_2011.tgz), data set for training by
+downloading the data-set in the ./resource/datasets/ folder, and build data list (train.txt test.txt) :
 
 ```bash
-train/020.Yellow_breasted_Chat/Yellow_Breasted_Chat_0075_21715.jpg,0
-train/020.Yellow_breasted_Chat/Yellow_Breasted_Chat_0012_21961.jpg,0
-train/043.Yellow_bellied_Flycatcher/Yellow_Bellied_Flycatcher_0008_42703.jpg,1
-train/043.Yellow_bellied_Flycatcher/Yellow_Bellied_Flycatcher_0009_795510.jpg,1
-train/043.Yellow_bellied_Flycatcher/Yellow_Bellied_Flycatcher_0003_795487.jpg,1
+./scripts/prepare_cub.sh
 ```
 
 Download the imagenet pretrained model of 
@@ -45,7 +42,7 @@ python setup.py develop build
 ###  Train and Test on CUB200-2011 with MS-Loss
 
 ```bash
-sh run_cub.sh
+./scripts/run_cub.sh
 ```
 Trained models will be saved in the ./output/ folder if using the default config.
 
