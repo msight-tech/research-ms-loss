@@ -7,13 +7,12 @@
 
 MODEL:
   BACKBONE:
-    NAME: bninception
+    NAME: resnet50
 
-LOSSES:
-  NAME: margin_loss
-  MARGIN_LOSS:
-    N_CLASSES: 100
-    BETA_CONSTANT: False # if False (i.e. class specific beta) train.txt should have labels 0 .... N_CLASSES -1
+INPUT:
+   MODE: 'RGB'
+   PIXEL_MEAN: [0.485, 0.456, 0.406]
+   PIXEL_STD: [0.229, 0.224, 0.225]
 
 SOLVER:
   MAX_ITERS: 3000
@@ -25,14 +24,11 @@ SOLVER:
   
 DATA:
   TRAIN_IMG_SOURCE: resource/datasets/CUB_200_2011/train.txt
-  TEST_IMG_SOURCE:  resource/datasets/CUB_200_2011/test.txt
-  TRAIN_BATCHSIZE: 120
+  TEST_IMG_SOURCE: resource/datasets/CUB_200_2011/test.txt
+  TRAIN_BATCHSIZE: 80
   TEST_BATCHSIZE: 256
   NUM_WORKERS: 8
   NUM_INSTANCES: 5
 
 VALIDATION:
   VERBOSE: 200
-
-SAVE_DIR: output_margin
-
