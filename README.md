@@ -22,8 +22,9 @@ Code for the CVPR 2019 paper [Multi-Similarity Loss with General Pair Weighting 
 
 ### Prepare the data and the pretrained model 
 
-Following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-data/CUB-200-2011/CUB_200_2011.tgz), data set for training by
-downloading the data-set in the ./resource/datasets/ folder, and build data list (train.txt test.txt) :
+The following script will prepare the [CUB](http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-data/CUB-200-2011/CUB_200_2011.tgz) dataset for training by
+downloading to the ./resource/datasets/ folder; which will then build the data list (train.txt test.txt):
+=======
 
 ```bash
 ./scripts/prepare_cub.sh
