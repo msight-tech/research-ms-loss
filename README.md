@@ -51,7 +51,7 @@ Best recall@1 higher than 66 (65.7 in the paper).
 
 For any questions, please feel free to reach 
 ```
-github@malong.com
+github@malongtech.com
 ```
 
 ### Citation
@@ -68,5 +68,5 @@ If you use this method or this code in your research, please cite as:
 
 ## License
 
-MS-Loss is CC-BY-NC 4.0 licensed, as found in the [LICENSE](LICENSE) file. It is released for academic research / non-commercial use only. If you wish to use for commercial purposes, please contact bd@malong.com.
+MS-Loss is CC-BY-NC 4.0 licensed, as found in the [LICENSE](LICENSE) file. It is released for academic research / non-commercial use only. If you wish to use for commercial purposes, please contact sales@malongtech.com.
 
