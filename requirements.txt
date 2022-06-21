@@ -1,5 +1,5 @@
 torch==1.1.0
-numpy==1.15.4
+numpy==1.22.0
 yacs==0.1.4
 setuptools==40.6.2
 pytest==4.4.0
