@@ -1,7 +1,7 @@
 torch==1.1.0
 numpy==1.15.4
 yacs==0.1.4
-setuptools==40.6.2
+setuptools==65.5.1
 pytest==4.4.0
 Pillow==8.3.2
 torchvision==0.3.0
